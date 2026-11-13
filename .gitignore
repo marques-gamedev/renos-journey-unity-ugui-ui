@@ -1,0 +1,108 @@
+*.utmp/
+
+*/[Ll]ibrary/
+*/[Tt]emp/
+*/[Oo]bj/
+*/[Bb]uild/
+*/[Bb]uilds/
+*/[Ll]ogs/
+*/[Uu]ser[Ss]ettings/
+
+*.log
+
+# MEMORY CAPTURES
+*/[Mm]emory[Cc]aptures/
+
+# RECORDINGS
+*/[Rr]ecordings/
+
+# BLENDER FILES
+
+*/[Aa]ssets/**/*.blend1
+*/[Aa]ssets/**/*.blend1.meta
+
+# UNITY CRASH RECOVERY AND GENERATED FILES
+
+*/[Aa]ssets/_Recovery/
+*/[Aa]ssets/_Recovery.meta
+*/[Aa]ssets/[Ss]ceneDependencyCache*
+sysinfo.txt
+.dirstamp
+mono_crash.*
+tmpinst-dir.stamp
+
+# VISUAL STUDIO
+*.vs/
+
+# JETBRAINS RIDER
+*.idea/
+*.DotSettings.user
+*/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# GRADLE
+*.gradle/
+
+# CONSULO
+*.consulo/
+
+# GENERATED UNITY PROJECTS AND SOLUTIONS
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# GENERATED UNITY DEBUG METADATA
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.vsconfig
+
+# UNITY BUILD OUTPUTS
+
+*/*_BackUpThisFolder_ButDontShipItWithYourGame/
+*/*_BurstDebugInformation_DoNotShip/
+*.apk
+*.aab
+*.obb
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# UNITY ASSET STORE
+
+*/[Aa]ssets/AssetStoreContent*
+
+# EXTERNAL DEPENDENCY MANAGER FOR UNITY (EDM4U)
+
+*/[Aa]ssets/GeneratedLocalRepo/
+*/[Aa]ssets/GeneratedLocalRepo.meta
+
+# UI TOOLKIT GENERATED FILES
+
+*/UIElementsSchema/
+
+# VISUAL STUDIO CODE
+
+*/.vscode/*
+!*/.vscode/settings.json
+!*/.vscode/tasks.json
+!*/.vscode/launch.json
+!*/.vscode/extensions.json
+
+# OPERATING SYSTEM FILES
+
+*.DS_Store
+Thumbs.db
+desktop.ini

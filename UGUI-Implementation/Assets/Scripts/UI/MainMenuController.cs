@@ -1,36 +1,46 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenuController : MonoBehaviour
+public class MainMenuController : ScreenController
 {
     [SerializeField]
-    private Button play_Bt;
+    private Button playBt;
     [SerializeField]
-    private Button options_Bt;
+    private Button optionsBt;
     [SerializeField]
-    private Button quit_Bt;
+    private Button quitBt;
+
+    public override void ScreenEnter()
+    {
+        
+    }
+
+    public override void ScreenExit()
+    {
+        
+    }
+
+    public void PlayButtonClick()
+    {
+        // Load the game
+        RuntimeManager.Instance.ScreenManager.ChangeScreen(eScreenIDs.Game);
+    }
+
+    public void OptionsButtonClick()
+    {
+        // Open options menu
+        RuntimeManager.Instance.ScreenManager.ChangeScreen(eScreenIDs.Options);
+    }
+
+    public void QuitButtonClick()
+    {
+        RuntimeManager.Instance.QuitGame();
+    }
 
     private void Awake()
     {
-        play_Bt.onClick.AddListener(Play_Button_Click);
-        options_Bt.onClick.AddListener(Options_Button_Click);
-        quit_Bt.onClick.AddListener(Quit_Button_Click);
-    }
-
-    public void Play_Button_Click()
-    {
-        // Load the game
-        Debug.Log("Play");
-    }
-
-    public void Options_Button_Click()
-    {
-        // Open options menu
-        Debug.Log("Options");
-    }
-
-    public void Quit_Button_Click()
-    {
-        RuntimeManager.Instance.QuitGame();
+        playBt.onClick.AddListener(PlayButtonClick);
+        optionsBt.onClick.AddListener(OptionsButtonClick);
+        quitBt.onClick.AddListener(QuitButtonClick);
     }
 }
